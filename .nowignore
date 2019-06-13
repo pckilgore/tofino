@@ -1,0 +1,6 @@
+.yarn-local-mirror
+.terraform
+
+src/
+test/
+.tf-backend/

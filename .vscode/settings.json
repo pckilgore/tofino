@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    // "**/*.bs.js": true
+  },
+"eslint.packageManager": "yarn",
+"eslint.enable": true
+}

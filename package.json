@@ -1,0 +1,26 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "start": "lerna run start --stream",
+    "postinstall": "node ./scripts/lerna-bsb-monkeypatch"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "bs-platform": "^5.0.4",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lerna": "^3.14.1",
+    "replace": "^1.1.0",
+    "webpack": "4.29.6",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "3.2.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

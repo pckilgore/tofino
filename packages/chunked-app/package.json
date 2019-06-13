@@ -1,0 +1,39 @@
+{
+  "name": "reason-react-lazy-loading",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack -w",
+    "webpack:production": "NODE_ENV=production webpack --display-used-exports #--display-optimization-bailout --display-modules --display-reasons",
+    "server": "yarn webpack:production && serve build"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@internal/a-component": "1.0.0",
+    "bs-dynamic-import": "^0.4.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "reason-loadable": "^0.6.1",
+    "reason-react": ">=0.7.0",
+    "reason-urql": "^1.0.0-beta"
+  },
+  "devDependencies": {
+    "bs-platform": "^5.0.4",
+    "graphql_ppx": "^0.2.8",
+    "html-webpack-plugin": "4.0.0-beta.5",
+    "react-dev-utils": "^9.0.1",
+    "serve": "^11.0.1",
+    "terser-webpack-plugin": "^1.3.0",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-manifest-plugin": "2.0.4",
+    "workbox-webpack-plugin": "^4.3.1"
+  }
+}
