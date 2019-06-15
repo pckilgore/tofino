@@ -16,6 +16,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@aws-amplify/auth": "^1.2.24",
     "@internal/a-component": "1.0.0",
     "bs-dynamic-import": "^0.4.0",
     "react": "^16.8.1",
