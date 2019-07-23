@@ -32,8 +32,10 @@ let make = () => {
   });
 
   <div className="App">
-    <Login />
-    <React.Suspense fallback={<div> {React.string("Loading...")} </div>}>
+    <React.Suspense fallback={<Loading />}>
+      <LazyLogin.Lazy />
+    </React.Suspense>
+    <React.Suspense fallback={<Loading />}>
       <ComponentA.Lazy message="An async hello to you." />
     </React.Suspense>
     {switch (state) {

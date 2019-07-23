@@ -2,6 +2,9 @@
   "files.exclude": {
     // "**/*.bs.js": true
   },
-"eslint.packageManager": "yarn",
-"eslint.enable": true
+  "eslint.packageManager": "yarn",
+  "eslint.enable": true,
+  "npm.fetchOnlinePackageInfo": false,
+  "npm.enableScriptExplorer": true,
+  "reason_language_server.autoRebuild": false
 }
